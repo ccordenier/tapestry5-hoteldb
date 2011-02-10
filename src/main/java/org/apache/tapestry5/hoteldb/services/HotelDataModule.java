@@ -16,7 +16,8 @@ public class HotelDataModule
 {
     public static void bind(ServiceBinder binder)
     {
-
+        binder.bind(Authenticator.class, BasicAuthenticator.class);
+        binder.bind(HotelService.class, HotelServiceImpl.class);
     }
 
     public static void contributeHibernateEntityPackageManager(Configuration<String> configuration)
