@@ -33,9 +33,13 @@ public class DataModule
         List<Hotel> hotels = new ArrayList<Hotel>();
         List<User> users = new ArrayList<User>();
 
-        users.add(new User("Christophe Cordenier", "cordenier", "ccordenier@example.com",
-                "cordenier"));
-        users.add(new User("Katia Aresti", "karesti", "karesti@example.com", "karesti"));
+        User cordenier = new User();
+        cordenier.setEmail("ccordenier@apache.org");
+        cordenier.setFullname("Christophe Cordenier");
+        cordenier.setUsername("cordenier");
+        cordenier.setPassword("cordenier");
+        
+        users.add(cordenier);
 
         hotels.add(new Hotel(129, 3, "Marriott Courtyard", "Tower Place, Buckhead", "Atlanta",
                 "GA", "30305", "USA"));

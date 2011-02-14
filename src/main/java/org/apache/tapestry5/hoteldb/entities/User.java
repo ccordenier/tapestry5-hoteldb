@@ -66,30 +66,6 @@ public class User
     {
     }
 
-    public User(final String fullname, final String username, final String email)
-    {
-        this.fullname = fullname;
-        this.username = username;
-        this.email = email;
-    }
-
-    public User(final String fullname, final String username, final String email,
-            final String password)
-    {
-        this(fullname, username, email);
-        this.password = password;
-    }
-
-    public User(Long id, String username, String fullname, String email, String password)
-    {
-        super();
-        this.id = id;
-        this.username = username;
-        this.fullname = fullname;
-        this.email = email;
-        this.password = password;
-    }
-
     @Override
     public String toString()
     {
